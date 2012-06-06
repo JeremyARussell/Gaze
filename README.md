@@ -1,6 +1,8 @@
 eyetracker
 ==========
 
+This is the windows/Code::Blocks version of the eye tracking program.
+
 Take images of an eye+reflections and find on-screen gaze points.
 
 Requires OpenCV and Openframeworks. Developed with opencv-2.3.1-3 and of_preRelease_v007_osx.

@@ -4,9 +4,11 @@
 
 //========================================================================
 int main( ){
-    
+
     ofAppGlutWindow window;
 	ofSetupOpenGL(&window, 1680, 1000, OF_WINDOW);
 	ofRunApp( new cvEyeTracker() );
 
 }
+
+//Todo - Blue test

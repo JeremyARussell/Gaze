@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="cvEyeTracker.cpp" open="1" top="0" tabpos="3">
+		<Cursor position="943" topLine="101" />
+	</File>
+	<File name="cvEyeTracker.h" open="1" top="0" tabpos="2">
+		<Cursor position="290" topLine="0" />
+	</File>
+	<File name="main.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="241" topLine="0" />
+	</File>
+	<File name="..\library\of_v0071\addons\ofxOpenCv\src\ofxCvImage.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="5881" topLine="339" />
+	</File>
+</CodeBlocks_layout_file>
