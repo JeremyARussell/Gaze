@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="debug" />
+	<File name="src\cvEyeTracker.cpp" open="1" top="0" tabpos="2">
+		<Cursor position="41334" topLine="1266" />
+	</File>
+	<File name="src\cvEyeTracker.h" open="1" top="1" tabpos="3">
+		<Cursor position="2127" topLine="81" />
+	</File>
+	<File name="src\main.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="77" topLine="0" />
+	</File>
+	<File name="..\library\of_v007\addons\ofxOpenCv\libs\opencv\include\opencv2\core\types_c.h" open="0" top="0" tabpos="0">
+		<Cursor position="13588" topLine="432" />
+	</File>
+	<File name="..\library\of_v007\addons\ofxOpenCv\libs\opencv\include\opencv2\imgproc\imgproc_c.h" open="0" top="0" tabpos="0">
+		<Cursor position="23559" topLine="495" />
+	</File>
+	<File name="..\library\of_v007\addons\ofxOpenCv\src\ofxCvContourFinder.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="2008" topLine="30" />
+	</File>
+</CodeBlocks_layout_file>

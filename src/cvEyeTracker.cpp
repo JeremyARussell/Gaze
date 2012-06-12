@@ -60,8 +60,11 @@ void cvEyeTracker::setup(){
 	cap_context = video_context_new( CV_USE_LIVE_VIDEO );
 
 	cap_count = frame_counter_new();
-    cap_size = cvSize(640, 480);
+    //cap_size = cvSize(640, 480);
+    cap_size = cvSize(600, 400);
     //cap_size = cvSize(320, 240);
+    //cap_size = cvSize(800, 600);
+
 
     bVideoReady = initVideo( &cap_context, &cap_count, &cap_size );
     assert( bVideoReady );
@@ -88,7 +91,7 @@ bool cvEyeTracker::initVideo( video_context *vid_context,
         vid_context->vp.setSpeed(1.0);
         vid_context->vp.setUseTexture(true);
 //		vid_context->vp.loadMovie("/Volumes/big/doc/eye/current/daytime.mov");
-		vid_context->vp.loadMovie("/Users/jdewitt/doc/eye/capture/grid_test_4.mov");
+		//vid_context->vp.loadMovie("/Users/jdewitt/doc/eye/capture/grid_test_4.mov");
 //		vid_context->vp.loadMovie("/Volumes/big/photo/guppy/20120411_131311_L.mov");
 //		vid_context->vp.loadMovie("/Users/jdewitt/doc/eye/3led/chris_pupil.mov");
 //		vid_context->vp.loadMovie("/Users/jdewitt/doc/eye/derpold/tf2_play.mov");
@@ -160,7 +163,7 @@ void cvEyeTracker::initEnvironment( CvSize the_size ){
 	pupil_bbox = cvRect(0, 0, cap_size.width, cap_size.height);
 
 	// boolean toggles
-	bUseEyeMouse		= false;
+	bUseEyeMouse		= true;
 	bToggleRec			= false;
 	bToggleRecRaw		= true;
 	bNewFrame			= false;
@@ -175,7 +178,7 @@ void cvEyeTracker::initEnvironment( CvSize the_size ){
 	bDrawEyeImage		= true;
 	bDrawDevScreen		= true;
 	bDrawCalibrationTargetPoints = true;
-	bDrawCalibrationSourcePoints = false;
+	bDrawCalibrationSourcePoints = true;
 	bDrawScreenGuessPoint		= true;
 	bDrawScreenGazePoint		= true;
 	bDrawPerkinjePoints			= true;
@@ -207,7 +210,7 @@ void cvEyeTracker::initEnvironment( CvSize the_size ){
 		hist_iris_avg[i] = -1;
 	}
 
-	// caluclated values
+	// calculated values
 	h_cur_peak_val = 0;
 	h_cur_peak_idx = 15;
 	h_avg_peak_val = 0;
@@ -290,7 +293,7 @@ void cvEyeTracker::initEnvironment( CvSize the_size ){
 //	cvClearSeq(seq_hull);
 
 	step_rdy  = 0;
-	threshold = 80;
+	threshold = 17;
 
 	// initialize ellipse model
 	box_ellipse_avg.center.x = 0;
@@ -487,11 +490,8 @@ void cvEyeTracker::initCalibrationMap(calibration_datum *new_map, int _r, int _c
 			dst_ptr[col*2+0] = cal_dst_origin.x+col*cal_dst_step.x;
 			dst_ptr[col*2+1] = cal_dst_origin.y+row*cal_dst_step.y;
 
-			printf("TEST ");
 		}
-		printf("TEST 2 ");
 	}
-    printf("TEST 3 ");
 //	cvSave("dst_pts.yml", new_map->dst_mat);
 
 	bMapReady = true;
@@ -1001,7 +1001,7 @@ void cvEyeTracker::draw(){
 	}
 
 	//
-	if( false && bDrawPerkinjePoints ){
+	if( false && bDrawPerkinjePoints ){//draw the colored perkinje points
 		CvPoint2D32f *tmp_pt;
 		for(int i=0;i<4;i++){
 			tmp_pt = (CvPoint2D32f*)cvGetSeqElem(perkinje_dst_pts, i);
