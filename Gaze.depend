@@ -1422,10 +1422,10 @@
 
 1339198600 source:t:\library\of_v007\apps\addonsexamples\opencvexample\src\main.cpp
 	"ofMain.h"
-	"eyetest.h"
+	"Gaze.h"
 	"ofAppGlutWindow.h"
 
-1339215964 t:\library\of_v007\apps\addonsexamples\opencvexample\src\eyetest.h
+1339215964 t:\library\of_v007\apps\addonsexamples\opencvexample\src\Gaze.h
 	"ofMain.h"
 	"ofxOpenCv.h"
 
@@ -1439,20 +1439,20 @@
 	"ofPoint.h"
 	"ofTypes.h"
 
-1339198600 source:t:\library\of_v007\apps\addonsexamples\opencvexample\src\eyetest.cpp
-	"eyetest.h"
+1339198600 source:t:\library\of_v007\apps\addonsexamples\opencvexample\src\Gaze.cpp
+	"Gaze.h"
 
-1339126476 source:t:\library\of_v007\apps\addonsexamples\eyetest\src\main.cpp
+1339126476 source:t:\library\of_v007\apps\addonsexamples\Gaze\src\main.cpp
 	"ofMain.h"
 	"cvEyeTracker.h"
 	"ofAppGlutWindow.h"
 
-1338936131 t:\library\of_v007\apps\addonsexamples\eyetest\src\cveyetracker.h
+1338936131 t:\library\of_v007\apps\addonsexamples\Gaze\src\cveyetracker.h
 	"ofMain.h"
 	"ofxOpenCv.h"
 	<assert.h>
 
-1339131730 source:t:\library\of_v007\apps\addonsexamples\eyetest\src\cveyetracker.cpp
+1339131730 source:t:\library\of_v007\apps\addonsexamples\Gaze\src\cveyetracker.cpp
 	"cvEyeTracker.h"
 	<opencv/cv.h>
 	<stdio.h>
